@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <html>
+        <body>
+            <form>
+                <label for="num1">Primer número:</label>
+                <input type="number" id="num1" name="num1">
+                <label for="num2">Segon número:</label>
+                <input type="number" id="num2" name="num2">
+                <label for="operacio">Operació:</label>
+                <select id="operacio" name="operacio">
+                  <option value="suma">Suma</option>
+                  <option value="multiplicacio">Multiplicació</option>
+                </select>
+                <button onclick="calcular()">Calcular</button>
+              </form>
+              <script>
+                function calcular() {
+                  var num1 = parseFloat(document.getElementById("num1").value);
+                  var num2 = parseFloat(document.getElementById("num2").value);
+                  var operacio = document.getElementById("operacio").value;
+                  var resultat;
+                  if (operacio === "suma") {
+                    resultat = num1 + num2;
+                  } else if (operacio === "multiplicacio") {
+                    resultat = num1 * num2;
+                  }
+                  alert("El resultat és: " + resultat);
+                }
+              </script>
+       
+        </body>
+        </html>
+       
+
+
+
+
+</body>
+</html>
