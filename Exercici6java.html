@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+
+
+      <script>
+
+const maxioComuDivisor = (a, b) => {
+
+let temporal; 
+while (b !== 0) {
+    temporal = b;
+    b = a % b;
+    a = temporal;
+}
+return a;
+};
+
+const minimComuMultiple = (a, b) => {
+
+return (a * b) / maximComuDivisor(a, b);
+};
+
+
+const a = 72, b = 50;
+const mcm = minimComuMultiple(a, b);
+console.log(`Minim comú mutiple de ${a} i ${b} es ${mcm}`);
+
+      </script>
+       
+
+
+</body>
+</html>
